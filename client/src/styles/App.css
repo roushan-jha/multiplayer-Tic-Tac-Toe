@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #76a2ff;
+  background-color: #ffbb76;
 }
 
 body {
@@ -51,7 +51,7 @@ body {
 .board {
   width: 500px;
   height: 500px;
-  background-color: rgb(252, 252, 252);
+  background-color: lightcyan;
   border: 1px solid black;
   display: flex;
   flex-direction: column;

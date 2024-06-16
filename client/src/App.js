@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './App.css';
+import './styles/App.css';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import { StreamChat } from "stream-chat";
