@@ -9,7 +9,7 @@ const Game = ({channel}) => {
     })
 
     if(!palyersJoined) {
-        return <div>Waiting for opponent to join...</div>
+        return <div className='wait-text'>Waiting for opponent to join...</div>
     }
   return (
     <div className='gameContainer' >

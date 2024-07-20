@@ -2,14 +2,27 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: #76a2ff;
+  background-color: black;
 }
 
 body {
   padding: 0;
   margin: 0;
+}
+
+.signUp {
+  /* background-image: radial-gradient(#76a2ff, blue); */
+  background-image: radial-gradient(lightsteelblue, black);
+  padding: 2rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.login {
+  background-image: radial-gradient(lightsteelblue, black);
+  padding: 2rem 1rem 2rem 1rem;
+  border-radius: 1rem;
 }
 
 .login,
@@ -27,18 +40,25 @@ body {
   border-radius: 4px;
   width: 300px;
   height: 30px;
+  outline: none;
 }
 
 .login button,
 .signUp button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: large;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 320px;
   height: 30px;
   cursor: pointer;
 }
+
 
 .login label,
 .signUp label {
@@ -85,18 +105,64 @@ h4 {
   font-size: 30px;
 }
 
+.joinGame {
+  background-image: radial-gradient(lightsteelblue, black);
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: xx-large;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+
+.joinGame-content {
+  display: flex;
+  gap: 5rem;
+}
+
 .joinGame input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 220px;
   height: 30px;
+  outline: none;
 }
 .joinGame button {
   padding: 10px;
   border: 1px solid #ccc;
+  font-weight: 400;
+  font-size: large;
   border-radius: 4px;
-  width: 220px;
+  width: 150px;
   height: 51px;
   cursor: pointer;
+}
+
+.wait-text {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: 500;
+  width: 250px;
+  height: 100px;
+  background-image: radial-gradient(lightsteelblue, black);
+  border-radius: 4px;
+}
+
+.logout {
+  padding: 1rem;
+  font-size: large;
+  font-weight: 400;
+  width: 150px;
+  border-radius: 4px;
+}
+
+.board {
+  background-image: radial-gradient(lightsteelblue, black);
 }

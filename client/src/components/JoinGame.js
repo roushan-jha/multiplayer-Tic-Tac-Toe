@@ -11,7 +11,7 @@ const JoinGame = () => {
   const createChannel = async () => {
     const response = await client.queryUsers({name: { $eq: opponentUsername }});
     if(response.users.length === 0) {
-      alert("User not found!");
+      alert("No User Found 🙅‍♂️");
       return;
     }
     const newChannel = await client.channel("messaging", {
@@ -30,9 +30,11 @@ const JoinGame = () => {
         </Channel>
       ) : (
         <div className='joinGame' >
-          <h4>Create Game</h4>
-          <input placeholder='Username of opponent...' onChange={(e) => setOpponentUsername(e.target.value)} />
-          <button onClick={createChannel}>Start Game</button>
+          <div>Create Game</div>
+          <div className='joinGame-content'>
+            <input placeholder='Username of opponent...' onChange={(e) => setOpponentUsername(e.target.value)} />
+            <button onClick={createChannel}>Start Game</button>
+          </div>
         </div>
       )
     }

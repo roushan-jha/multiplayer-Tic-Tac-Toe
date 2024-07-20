@@ -44,8 +44,8 @@ const Board = ({result, setResult}) => {
                 }
             });
             if(foundWinningPattern) {
-                alert("Winner", board[currentPattern[0]]);
                 setResult({winner: board[currentPattern[0]], state: "won"});
+                alert("Winner 🥇", board[currentPattern[0]]);
             }  
         });
     }

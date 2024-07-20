@@ -14,8 +14,11 @@ const Login = ({setIsAuth}) => {
         username,
         password,
       }).then((res) => {
-        const {firstName, lastName, username, token, userId} = res.data;
-        
+        const {firstName, lastName, username, token, userId, message} = res.data;
+        if(message) {
+          alert(message);
+          return;
+        }
         cookies.set("token", token);
         cookies.set("firstName", firstName);
         cookies.set("lastName", lastName);
